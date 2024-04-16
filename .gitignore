@@ -1,0 +1,6 @@
+*.pdf
+*.png
+*.mjs
+
+static/pdf
+static/images

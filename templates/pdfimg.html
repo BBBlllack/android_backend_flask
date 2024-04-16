@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Preview</title>
+</head>
+<body>
+<div style="text-align: center">
+    <!-- 显示转换后的图片 -->
+    {% for image_path in image_paths %}
+        <div class="pdf">
+            <div>
+                <span>Page: {{ loop.index }}</span>
+            </div>
+            <img src="{{ image_path }}" alt="PDF Page">
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
+<style>
+    .pdf {
+        border: 1px solid grey;
+    }
+</style>
