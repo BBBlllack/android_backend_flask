@@ -8,7 +8,7 @@ import re
 from pydub import AudioSegment
 from pydub.playback import play
 
-key = "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"
+key = ""
 client = OpenAI(api_key=key)
 
 
