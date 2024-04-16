@@ -7,7 +7,7 @@ import logging as log
 
 cursor: DictCursor
 
-key = "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"
+key = ""
 
 client = OpenAI(api_key=key)
 OpenApi = Blueprint(name="openai", import_name=__name__, url_prefix="/openai")
